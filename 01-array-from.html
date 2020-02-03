@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>01 - Array.from</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+
+  <ul id="list">
+    <li>beatorizu</li>
+    <li>polar</li>
+    <li>panda</li>
+  </ul>
+
+</body>
+
+<script>
+    // const text = 'beatorizu';
+    //
+    // console.log(Array.from(text));
+
+    const list = document.querySelectorAll('#list li');
+    console.log(list);
+    console.log(Array.from(list).map(item => item.textContent));
+</script>
+</html>

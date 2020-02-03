@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>03 - Array.find Array.findIndex</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+
+</body>
+
+<script>
+    const data = [
+      {
+        name: 'Bea',
+        age: 22,
+        city: 'SJC'
+      },
+      {
+        name: 'Panda',
+        age: 22,
+        city: 'SP'
+      }
+    ];
+
+    const sampleArray = [4, -5, 0, -1];
+
+    const underZero = sampleArray.find(x => x < 0);
+    const underZeroIndex = sampleArray.findIndex(x => x < 0);
+
+    const bea = data.find(bea => bea.name === 'Bea');
+    const beaIndex = data.findIndex(bea => bea.name === 'Bea');
+</script>
+</html>
